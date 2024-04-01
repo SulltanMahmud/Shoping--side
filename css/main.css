@@ -239,6 +239,23 @@ body {
      object-fit: cover;
   margin-bottom: 12.8px;
 }
+.feature-product-section .main-feature-box .product-box .product-content.shoe-colour .check-colour label {
+  cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: hsl(30, 50%, 75%);
+  border-radius: 50%;
+}
+.feature-product-section .main-feature-box .product-box .product-content.shoe-colour .check-colour label.shoe-1 {
+  background-color: green;
+}
+.feature-product-section .main-feature-box .product-box .product-content.shoe-colour .check-colour label.shoe-2 {
+  background-color: blue;
+}
+.feature-product-section .main-feature-box .product-box .product-content.shoe-colour .check-colour label.shoe-3 {
+  background-color: red;
+}
 .feature-product-section .main-feature-box .product-box .product-content .product-name {
   font-weight: 700;
   line-height: 20.8px;

@@ -29,9 +29,35 @@
           width: 100%;
           object-fit: cover;
           margin-bottom: 12.8px;
+
+          
         }
       }
       .product-content {
+        &.shoe-colour {
+          .check-colour {
+            label {
+              cursor: pointer;
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              background-color: hsl(30, 50%, 75%);
+              border-radius: 50%;
+
+              &.shoe-1{
+                background-color: green;
+              }
+                &.shoe-2{
+                background-color: blue;
+              }
+                &.shoe-3{
+                background-color: red;
+              }
+               
+            }
+          }
+        }
+
         .product-name {
           font-weight: 700;
           line-height: 20.8px;
