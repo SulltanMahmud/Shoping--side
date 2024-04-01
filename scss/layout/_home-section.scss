@@ -1,0 +1,76 @@
+.main-home-section {
+  font-family: "Lato", sans-serif;
+  background: url(/assets/asset\ 25.jpeg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  .home-section {
+    padding-top: 227.875px;
+    padding-bottom: 227.875px;
+
+    .home-content-title {
+      h1 {
+        font-size: 66px;
+        font-weight: 700;
+        line-height: 79.2px;
+        color: white;
+      }
+    }
+
+    .home-content-discount {
+      margin-top: 25px;
+      margin-bottom: 20px;
+      h3 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: left;
+        color: white;
+      }
+    }
+
+    .home-button {
+      .shop-button {
+        .btn {
+          border: none;
+          border-radius: 0px;
+            color: black;
+          background-color: white;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 700;
+          text-size-adjust: 100%;
+          letter-spacing: 1px;
+          line-height: 14px;
+          padding: 16px 28px;
+          text-transform: uppercase;
+
+          &:hover{
+            background-color: black;
+            color: white;
+          }
+
+          &.btn-2{
+            margin-left: 20px;
+            background-color: transparent;
+            color: white;
+            border:  1px solid white;
+
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

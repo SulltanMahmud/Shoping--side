@@ -1,0 +1,40 @@
+.nav-section {
+  width: 100%;
+  position: relative;
+  top: 0;
+
+  .navbar {
+    font-family: "Lato", sans-serif;
+    background-color: rgba(0, 0, 0, 0.07);
+    z-index: 1000;
+    cursor: pointer;
+    .nav-menu {
+      padding: 16px 35px;
+      .nav-content {
+        .nav-content-left {
+          a {
+            color: white;
+            text-decoration: none;
+            padding: 0 14.4px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 70px;
+            color: rgb(245, 247, 249);
+            text-transform: uppercase;
+          }
+        }
+        .nav-content-right {
+          margin-left: 600px;
+          a {
+            color: white;
+            text-decoration: none;
+            padding: 0 14.4px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 70px;
+          }
+        }
+      }
+    }
+  }
+}
