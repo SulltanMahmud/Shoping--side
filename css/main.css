@@ -369,13 +369,15 @@ body {
 
 .quality-provide-section {
   font-family: "Lato", sans-serif;
-  margin-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .quality-provide-section .small-container {
   margin-left: 90px;
   margin-right: 90px;
 }
 .quality-provide-section .small-container .quality-container {
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,7 +411,21 @@ body {
   font-weight: 400;
   line-height: 29.71px;
   color: black;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  text-align: center;
+}
+
+.offer-title {
+  padding: 30px;
+}
+.offer-title h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 39px;
+  text-transform: uppercase;
 }

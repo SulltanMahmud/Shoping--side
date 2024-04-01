@@ -1,26 +1,26 @@
 .quality-provide-section {
-    font-family:"Lato", sans-serif ;
-  margin-top: 80px;
+  font-family: "Lato", sans-serif;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   .small-container {
     margin-left: 90px;
     margin-right: 90px;
 
     .quality-container {
-        padding: 20px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       .quality-img {
-         margin-bottom: 20px;
+        margin-bottom: 20px;
         img {
           width: 52px;
           height: 52px;
-          
         }
       }
-      .title{
+      .title {
         font-size: 18px;
         font-weight: 700;
         line-height: 21.6px;
@@ -28,14 +28,16 @@
         color: black;
       }
 
-      p{
+      p {
         font-size: 16px;
         font-weight: 400;
         line-height: 29.71px;
         color: black;
         text-size-adjust: 100%;
-         
+        text-align: center;
       }
     }
   }
 }
+
+ 
