@@ -1,9 +1,94 @@
-.footer-wraper-section {
-  .dhk-title {
+.footer-section {
+  font-family: "Lato", sans-serif;
+  padding-top: 75px;
+  padding-bottom: 100px;
+
+  .dhk-logo {
+    margin-bottom: 45px;
+    img {
+      width: 90px;
+      height: 30px;
+      object-fit: cover;
+    }
+  }
+  h3 {
     font-size: 22px;
     font-weight: 700;
     line-height: 33px;
-    color: white;
     text-align: left;
+    margin-top: 30px;
+  }
+
+  .male-section {
+    .title {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 15.4px;
+      line-height: 33px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0px;
+
+      li {
+        a {
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 29.7143px;
+          text-align: left;
+          color: rgba(0, 0, 0, 0.51);
+          &:hover {
+            color: blue;
+          }
+        }
+      }
+    }
+  }
+
+  .subscribe-section {
+    .title {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 15.4px;
+      line-height: 33px;
+    }
+    .input-group {
+      padding: 10px 0;
+      .form-control {
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 12px;
+      }
+    }
+    .btn {
+      margin-top: 10px;
+      border-radius: 0px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+    }
+  }
+
+  .footer-last-part {
+    padding: 30px 0;
+    .footer-left {
+      a {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27.85px;
+        color: rgb(51, 51, 51);
+        text-decoration: none;
+      }
+    }
+    .footer-right{
+        i{
+            cursor: pointer;
+            margin-left: 15px;
+            &:hover{
+                color: blue;
+            }
+        }
+    }
   }
 }

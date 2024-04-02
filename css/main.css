@@ -430,10 +430,83 @@ body {
   text-transform: uppercase;
 }
 
-.footer-wraper-section .dhk-title {
+.footer-section {
+  font-family: "Lato", sans-serif;
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+.footer-section .dhk-logo {
+  margin-bottom: 45px;
+}
+.footer-section .dhk-logo img {
+  width: 90px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer-section h3 {
   font-size: 22px;
   font-weight: 700;
   line-height: 33px;
-  color: white;
   text-align: left;
+  margin-top: 30px;
+}
+.footer-section .male-section .title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15.4px;
+  line-height: 33px;
+}
+.footer-section .male-section ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.footer-section .male-section ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29.7143px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.51);
+}
+.footer-section .male-section ul li a:hover {
+  color: blue;
+}
+.footer-section .subscribe-section .title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15.4px;
+  line-height: 33px;
+}
+.footer-section .subscribe-section .input-group {
+  padding: 10px 0;
+}
+.footer-section .subscribe-section .input-group .form-control {
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 12px;
+}
+.footer-section .subscribe-section .btn {
+  margin-top: 10px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+.footer-section .footer-last-part {
+  padding: 30px 0;
+}
+.footer-section .footer-last-part .footer-left a {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27.85px;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}
+.footer-section .footer-last-part .footer-right i {
+  cursor: pointer;
+  margin-left: 15px;
+}
+.footer-section .footer-last-part .footer-right i:hover {
+  color: blue;
 }
