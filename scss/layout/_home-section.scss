@@ -6,6 +6,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  @include sm {
+    height: auto;
+  }
 
   display: flex;
   flex-direction: column;
@@ -16,12 +19,26 @@
     padding-top: 227.875px;
     padding-bottom: 227.875px;
 
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
     .home-content-title {
       h1 {
         font-size: 66px;
         font-weight: 700;
         line-height: 79.2px;
         color: white;
+        @include sm {
+          font-size: 30px;
+          text-align: center;
+          line-height: 50px;
+        }
       }
     }
 
@@ -34,6 +51,11 @@
         line-height: 39px;
         text-align: left;
         color: white;
+
+        @include sm {
+          font-size: 20px;
+          line-height: 30px;
+        }
       }
     }
 
@@ -42,7 +64,7 @@
         .btn {
           border: none;
           border-radius: 0px;
-            color: black;
+          color: black;
           background-color: white;
           text-decoration: none;
           font-size: 14px;
@@ -53,20 +75,28 @@
           padding: 16px 28px;
           text-transform: uppercase;
 
-          &:hover{
+          @include sm {
+            width: 100%;
+          }
+
+          &:hover {
             background-color: black;
             color: white;
           }
 
-          &.btn-2{
+          &.btn-2 {
             margin-left: 20px;
             background-color: transparent;
             color: white;
-            border:  1px solid white;
+            border: 1px solid white;
+            @include sm {
+              margin-left: 0px;
+              margin-top: 15px;
+            }
 
-            &:hover{
-                background-color: white;
-                color: black;
+            &:hover {
+              background-color: white;
+              color: black;
             }
           }
         }

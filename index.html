@@ -29,7 +29,9 @@
   <body>
     <!-- Nav bar -->
     <div class="nav-section">
-      <nav class="navbar navbar-expand-lg bg-opacity-50 position-absolute">
+      <nav
+        class="d-none navbar navbar-expand-lg bg-opacity-50 position-absolute"
+      >
         <div class="nav-menu d-flex justify-content-between align-items-center">
           <a class="navbar-brand" href="#">
             <img src="./assets/asset 0.png" alt="" />
@@ -72,7 +74,7 @@
         <div class="overlay"></div>
         <div class="custom-container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-sm-12 col-lg-6">
               <div class="home-section">
                 <div class="home-content-title">
                   <h1>Raining Offers For Hot Summer!</h1>
@@ -92,7 +94,6 @@
                       Find MOre
                     </button>
                   </div>
-                  <div class="find-button"></div>
                 </div>
               </div>
             </div>
@@ -114,7 +115,9 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="./assets/asset 3.png" alt="" class="mx-auto" />
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/asset-4.png" alt="" />
+                  </div>
                 </li>
                 <li class="splide__slide">
                   <div class="d-flex justify-content-center">
@@ -122,20 +125,30 @@
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/asset 5.png" alt="" />
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/asset 3.png" alt="" />
+                  </div>
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/asset 6.png" alt="" />
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/asset 5.png" alt="" />
+                  </div>
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/asset 7.png" alt="" />
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/asset-4.png" alt="" />
+                  </div>
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/asset 7.png" alt="" />
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/asset-5.png" alt="" />
+                  </div>
                 </li>
 
                 <li class="splide__slide">
-                  <img src="/assets/asset 7.png" alt="" />
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/asset-3.png" alt="" />
+                  </div>
                 </li>
               </ul>
             </div>
@@ -247,12 +260,10 @@
             <div class="col">
               <div class="product-box">
                 <div class="product-img">
-                  <input type="radio" id="colour-1" checked hidden />
-                  <input type="radio" id="colour-2" checked hidden />
-                  <input type="radio" id="colour-3" checked hidden />
                   <div class="shoe-colour-img">
                     <img
                       class="shoe-pic-img"
+                      id="product-img"
                       src="./assets/asset 9.jpeg"
                       alt=""
                     />
@@ -262,12 +273,17 @@
                   <div class="product-name">DNK Yellow Shoes</div>
                   <div class="product-for">Men</div>
                   <span class="regular-price">$120.00</span>
-                  <div class="check-colour">
-                    <label class="shoe-1" for="color-1"></label>
-                    <label class="shoe-2" for="color-2"></label>
-                    <label class="shoe-3" for="color-3"></label>
+                  <div class="colour-option">
+                    <button class="blue" onclick="changeImage('blue')"></button>
+                    <button
+                      class="green"
+                      onclick="changeImage('green')"
+                    ></button>
+                    <button
+                      class="orange"
+                      onclick="changeImage('orange')"
+                    ></button>
                   </div>
-
                   <div class="ratings">
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
@@ -381,15 +397,29 @@
             <div class="col">
               <div class="product-box">
                 <div class="product-img">
-                  <img src="./assets/asset 14.jpeg" alt="" />
+                  <img id="nekles" src="./assets/asset 14.jpeg" alt="" />
                 </div>
-                <div class="product-content">
+                <div class="product-content shoe-colour">
                   <div class="product-name">DNK Yellow Shoes</div>
                   <div class="product-for">Men</div>
                   <span class="discount-price text-decoration-line-through">
                     $150.00</span
                   >
                   <span class="regular-price">$120.00</span>
+                  <div class="colour-option">
+                    <button
+                      class="blue"
+                      onclick="changeImagetwo('black')"
+                    ></button>
+                    <button
+                      class="green"
+                      onclick="changeImagetwo('sky')"
+                    ></button>
+                    <button
+                      class="orange"
+                      onclick="changeImagetwo('pink')"
+                    ></button>
+                  </div>
 
                   <div class="ratings">
                     <i class="fa-regular fa-star"></i>
@@ -503,7 +533,7 @@
         <div class="quality-provide-section">
           <div class="small-container">
             <div class="row">
-              <div class="col-3">
+              <div class="col-lg-3 col-12">
                 <div class="quality-container">
                   <div class="quality-img">
                     <img src="/assets/asset 19.png" alt="" />
@@ -515,7 +545,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-lg-3 col-12">
                 <div class="quality-container">
                   <div class="quality-img">
                     <img src="/assets/asset 20.png" alt="" />
@@ -527,7 +557,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-lg-3 col-12">
                 <div class="quality-container">
                   <div class="quality-img">
                     <img src="/assets/asset 21.png" alt="" />
@@ -539,7 +569,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-lg-3 col-12">
                 <div class="quality-container">
                   <div class="quality-img">
                     <img src="/assets/asset 22.png" alt="" />
@@ -560,12 +590,8 @@
     <!-- offer headline -->
     <div class="offer-wrap border">
       <div class="custom-container">
-        <div class="small-container">
-          <div class="offer-title">
-            <h3>
-              Small Up to 70% off all clothes & FAshion Items,On All Brands
-            </h3>
-          </div>
+        <div class="offer-title">
+          <h3>Small Up to 70% off all clothes & FAshion Items,On All Brands</h3>
         </div>
       </div>
     </div>
@@ -574,14 +600,14 @@
 
     <div class="footer-section border-bottom">
       <div class="custom-container">
-        <div class="row">
-          <div class="col-5">
+        <div class="row justify-content-sm-center align-items-sm-center">
+          <div class="col-lg-5 col-12">
             <div class="dhk-logo">
               <img src="./assets/asset 1.png" alt="" />
             </div>
             <h3 class="dhk-title">The best look anytime,anywhere</h3>
           </div>
-          <div class="col-2">
+          <div class="col-lg-2 col-12">
             <div class="male-section">
               <h2 class="title">For Her</h2>
 
@@ -614,7 +640,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-lg-2 col-12">
             <div class="male-section">
               <h2 class="title">For Him</h2>
 
@@ -648,7 +674,7 @@
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-12">
             <div class="subscribe-section">
               <h2 class="title">Subscribe</h2>
               <div class="input-group flex-nowrap">
@@ -693,6 +719,8 @@
     <script src="
       https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
       "></script>
+    <!-- shoe js -->
+    <script src="./js/shoe.js"></script>
 
     <!-- Brand js -->
     <script src="./js/brand.js"></script>

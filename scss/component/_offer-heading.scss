@@ -1,5 +1,10 @@
 .offer-title{
     padding: 30px;
+
+    @include sm{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   h3 {
     font-family: "Lato", sans-serif;
     font-size: 26px;
@@ -7,5 +12,9 @@
     text-align: left;
     line-height: 39px;
     text-transform: uppercase;
+
+    @include sm{
+      font-size: 20px;
+    }
   }
 }

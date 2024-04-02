@@ -11,13 +11,20 @@ body {
 }
 
 .custom-container {
-  width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding:0 30px;
+
+  @include sm {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .custom-brand-container {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding:0 30px;
 }
 
 #brand-logo {
@@ -29,5 +36,3 @@ body {
     margin-right: auto;
   }
 }
-
- 

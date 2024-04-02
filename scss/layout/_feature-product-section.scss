@@ -29,31 +29,28 @@
           width: 100%;
           object-fit: cover;
           margin-bottom: 12.8px;
-
-          
         }
       }
       .product-content {
         &.shoe-colour {
-          .check-colour {
-            label {
-              cursor: pointer;
-              display: inline-block;
-              width: 15px;
-              height: 15px;
-              background-color: hsl(30, 50%, 75%);
-              border-radius: 50%;
+          button {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: none;
+            margin-right: 5px;
+            margin-top: 5px;
 
-              &.shoe-1{
-                background-color: green;
-              }
-                &.shoe-2{
-                background-color: blue;
-              }
-                &.shoe-3{
-                background-color: red;
-              }
-               
+            &.blue {
+              background-color: blue;
+            }
+
+            &.green {
+              background-color: green;
+            }
+
+            &.orange {
+              background-color: orange;
             }
           }
         }

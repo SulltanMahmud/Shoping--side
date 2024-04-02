@@ -7,6 +7,19 @@ const brandlogo = new Splide("#brand-logo", {
   perPage: 5,
   // autoplay: true,
   interval: 4000,
+  breakpoints: {
+    576: {
+      perPage: 1,
+    },
+
+    992: {
+      perPage: 2,
+    },
+
+    1200: {
+      perPage: 3,
+    },
+  },
 });
 
 brandlogo.mount();
