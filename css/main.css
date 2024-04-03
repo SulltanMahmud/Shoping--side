@@ -442,8 +442,28 @@ body {
   text-transform: uppercase;
   padding: 10px 20px;
 }
+@media only screen and (max-width: 576px) {
+  .footer-section .subscribe-section .btn {
+    margin-left: 35%;
+  }
+}
 .footer-section .footer-last-part {
   padding: 30px 0;
+}
+@media only screen and (max-width: 576px) {
+  .footer-section .footer-last-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
 }
 .footer-section .footer-last-part .footer-left a {
   font-size: 15px;
@@ -474,6 +494,11 @@ body {
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
 }
+@media only screen and (max-width: 576px) {
+  .special-wrapper .special-edition {
+    padding: 60px 20px;
+  }
+}
 .special-wrapper .special-edition .special-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,21 +511,50 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+@media only screen and (max-width: 576px) {
+  .special-wrapper .special-edition .special-items {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .special-wrapper .special-edition .special-items .offer {
   font-weight: 700;
   line-height: 24px;
   font-size: 20px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 576px) {
+  .special-wrapper .special-edition .special-items .offer {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 .special-wrapper .special-edition .special-items h2 {
   font-weight: 700;
   font-size: 42px;
   line-height: 54.6px;
 }
+@media only screen and (max-width: 576px) {
+  .special-wrapper .special-edition .special-items h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
 .special-wrapper .special-edition .special-items p {
   font-size: 16px;
   font-weight: 400;
   line-height: 29.7143px;
+}
+@media only screen and (max-width: 576px) {
+  .special-wrapper .special-edition .special-items p {
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+  }
 }
 .special-wrapper .special-edition .special-items h4 {
   font-size: 24px;
