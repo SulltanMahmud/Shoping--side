@@ -27,45 +27,156 @@
     />
   </head>
   <body>
-    <!-- Nav bar -->
+    <!-- nav section -->
     <div class="nav-section">
-      <nav
-        class="d-none navbar navbar-expand-lg bg-opacity-50 position-absolute"
-      >
-        <div class="nav-menu d-flex justify-content-between align-items-center">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/asset 0.png" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <div class="nav-wrapper">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div
+              class="nav-left-part d-flex justify-content-center align-items-center"
+            >
+              <a class="navbar-brand" href="#">
+                <img id="navimg" src="./assets/asset 0.png" alt="" />
+              </a>
 
-          <!-- Nav Content -->
-          <div class="nav-content d-flex align-items-center">
-            <div class="nav-content-left d-flex">
-              <a class="left-menu">Everything</a>
-              <a class="left-menu">Women</a>
-              <a class="left-menu">Men</a>
-              <a class="left-menu">Accessories</a>
+              <div class="nav-left-section d-none d-lg-block">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Everything</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Women</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Men</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">Accesspries</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="nav-content-right d-flex">
-              <a class="right-menu">About</a>
-              <a class="right-menu">Contact</a>
-              <a class="right-menu">$0.00</a>
-              <a class="right-menu">some</a>
-              <a class="right-menu">some</a>
+            <!-- togggle button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- offcanvas -->
+            <div
+              class="offcanvas offcanvas-end d-block d-lg-none"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+              style="width: 82%"
+            >
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul>
+                  <li class="">
+                    <div class="context">
+                      <a href="">
+                        <i class="fa-solid fa-address-book"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="border">
+                    <div class="context">
+                      <a href="">Everything</a>
+                    </div>
+                  </li>
+                  <li class="border">
+                    <div class="context">
+                      <a href="">Women</a>
+                    </div>
+                  </li>
+                  <li class="border">
+                    <div class="context">
+                      <a href="">Men</a>
+                    </div>
+                  </li>
+                  <li class="border">
+                    <div class="context">
+                      <a href="">Accessories</a>
+                    </div>
+                  </li>
+                  <li class="border">
+                    <div class="context">
+                      <a href=""></a>
+                    </div>
+                  </li>
+                  <li class="border">
+                    <div class="context">
+                      <a href=""></a>
+                    </div>
+                  </li>
+                  <li class="border">
+                    <div class="context">
+                      <a href=""></a>
+                    </div>
+                  </li>
+
+                  <li class="border">
+                    <div class="context">
+                      <a href="">About</a>
+                    </div>
+                  </li>
+
+                  <li class="border">
+                    <div class="context">
+                      <a href=""> Contact US</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Nav right section -->
+
+            <div class="nav-right-section d-none d-lg-block">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">$0.00</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-disabled="true">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-disabled="true">
+                    <i class="fa-regular fa-address-book"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+
+        <!-- Toggle and offcanvas -->
+      </div>
     </div>
 
     <!-- Home section -->
@@ -156,66 +267,65 @@
         </div>
 
         <!-- brand-category =-img -->
-        <div class="custom-container">
-          <div class="row">
-            <div class="col-4">
-              <div class="category-section">
-                <div class="category-img">
-                  <img src="./assets/asset 26.jpeg" alt="" />
-                </div>
 
-                <div class="overlay-img">
-                  <div class="image-headline"><h3>20% off Tank Tops</h3></div>
-                  <div class="img-description">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Quo exercitationem
-                    </p>
-                  </div>
-                  <button type="button" class="btn btn-outline-secondary">
-                    SHop Now
-                  </button>
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <div class="category-section">
+              <div class="category-img">
+                <img src="./assets/asset 26.jpeg" alt="" />
+              </div>
+
+              <div class="overlay-img">
+                <div class="image-headline"><h3>20% off Tank Tops</h3></div>
+                <div class="img-description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quo exercitationem
+                  </p>
                 </div>
+                <button type="button" class="btn btn-outline-secondary">
+                  SHop Now
+                </button>
               </div>
             </div>
-            <div class="col-4">
-              <div class="category-section">
-                <div class="category-img">
-                  <img src="./assets/asset 27.jpeg" alt="" />
-                </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="category-section">
+              <div class="category-img">
+                <img src="./assets/asset 27.jpeg" alt="" />
+              </div>
 
-                <div class="overlay-img">
-                  <div class="image-headline"><h3>20% off Tank Tops</h3></div>
-                  <div class="img-description">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Quo exercitationem
-                    </p>
-                  </div>
-                  <button type="button" class="btn btn-outline-secondary">
-                    SHop Now
-                  </button>
+              <div class="overlay-img">
+                <div class="image-headline"><h3>20% off Tank Tops</h3></div>
+                <div class="img-description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quo exercitationem
+                  </p>
                 </div>
+                <button type="button" class="btn btn-outline-secondary">
+                  SHop Now
+                </button>
               </div>
             </div>
-            <div class="col-4">
-              <div class="category-section">
-                <div class="category-img">
-                  <img src="./assets/asset 28.jpeg" alt="" />
-                </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="category-section">
+              <div class="category-img">
+                <img src="./assets/asset 28.jpeg" alt="" />
+              </div>
 
-                <div class="overlay-img">
-                  <div class="image-headline"><h3>20% off Tank Tops</h3></div>
-                  <div class="img-description">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Quo exercitationem
-                    </p>
-                  </div>
-                  <button type="button" class="btn btn-outline-secondary">
-                    Check Now
-                  </button>
+              <div class="overlay-img">
+                <div class="image-headline"><h3>20% off Tank Tops</h3></div>
+                <div class="img-description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quo exercitationem
+                  </p>
                 </div>
+                <button type="button" class="btn btn-outline-secondary">
+                  Check Now
+                </button>
               </div>
             </div>
           </div>
@@ -233,135 +343,325 @@
         <div class="border-line"></div>
 
         <div class="main-feature-box">
-          <div class="row">
-            <div class="col-lg col-6 mb-5">
-              <div class="product-box">
-                <div class="product-img">
-                  <img src="./assets/asset 8.jpeg" alt="" />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">DNK Yellow Shoes</div>
-                  <div class="product-for">Men</div>
-                  <span class="discount-price text-decoration-line-through">
-                    $150.00</span
-                  >
-                  <span class="regular-price">$120.00</span>
+          <div class="custom-container">
+            <div class="row">
+              <div class="col-lg col-6 mb-5">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="./assets/asset 8.jpeg" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
 
-                  <div class="ratings">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-6">
+                <div class="product-box">
+                  <div class="product-img">
+                    <div class="shoe-colour-img">
+                      <img
+                        class="shoe-pic-img"
+                        id="product-img"
+                        src="./assets/asset 9.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="product-content shoe-colour">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="regular-price">$120.00</span>
+                    <div class="colour-option">
+                      <button
+                        class="blue"
+                        onclick="changeImage('blue')"
+                      ></button>
+                      <button
+                        class="green"
+                        onclick="changeImage('green')"
+                      ></button>
+                      <button
+                        class="orange"
+                        onclick="changeImage('orange')"
+                      ></button>
+                    </div>
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg col-6">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="./assets/asset 10.jpeg" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
+
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg col-6">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="./assets/asset 11.jpeg" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
+
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg col-6">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="./assets/asset 12.jpeg" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
+
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg col-6 d-lg-none">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="./assets/asset 12.jpeg" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
+
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class=" col-lg col-6">
-              <div class="product-box">
-                <div class="product-img">
-                  <div class="shoe-colour-img">
-                    <img
-                      class="shoe-pic-img"
-                      id="product-img"
-                      src="./assets/asset 9.jpeg"
-                      alt=""
-                    />
+          </div>
+
+          <div class="main-feature-box">
+            <div class="row">
+              <div class="col-lg col-6">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="./assets/asset 13.jpeg" alt="" />
                   </div>
-                </div>
-                <div class="product-content shoe-colour">
-                  <div class="product-name">DNK Yellow Shoes</div>
-                  <div class="product-for">Men</div>
-                  <span class="regular-price">$120.00</span>
-                  <div class="colour-option">
-                    <button class="blue" onclick="changeImage('blue')"></button>
-                    <button
-                      class="green"
-                      onclick="changeImage('green')"
-                    ></button>
-                    <button
-                      class="orange"
-                      onclick="changeImage('orange')"
-                    ></button>
-                  </div>
-                  <div class="ratings">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                  <div class="product-content">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
+
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="col-lg col-6">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img id="nekles" src="./assets/asset 14.jpeg" alt="" />
+                  </div>
+                  <div class="product-content shoe-colour">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
+                    <div class="colour-option">
+                      <button
+                        class="blue"
+                        onclick="changeImagetwo('black')"
+                      ></button>
+                      <button
+                        class="green"
+                        onclick="changeImagetwo('sky')"
+                      ></button>
+                      <button
+                        class="orange"
+                        onclick="changeImagetwo('pink')"
+                      ></button>
+                    </div>
 
-            <div class="col-lg col-6">
-              <div class="product-box">
-                <div class="product-img">
-                  <img src="./assets/asset 10.jpeg" alt="" />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">DNK Yellow Shoes</div>
-                  <div class="product-for">Men</div>
-                  <span class="discount-price text-decoration-line-through">
-                    $150.00</span
-                  >
-                  <span class="regular-price">$120.00</span>
-
-                  <div class="ratings">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="product-box">
-                <div class="product-img">
-                  <img src="./assets/asset 11.jpeg" alt="" />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">DNK Yellow Shoes</div>
-                  <div class="product-for">Men</div>
-                  <span class="discount-price text-decoration-line-through">
-                    $150.00</span
-                  >
-                  <span class="regular-price">$120.00</span>
+              <div class="col-lg col-6">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="./assets/asset 15.jpeg" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
 
-                  <div class="ratings">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="product-box">
-                <div class="product-img">
-                  <img src="./assets/asset 12.jpeg" alt="" />
+              <div class="col-lg col-6">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="./assets/asset 16.jpeg" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
+
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="product-content">
-                  <div class="product-name">DNK Yellow Shoes</div>
-                  <div class="product-for">Men</div>
-                  <span class="discount-price text-decoration-line-through">
-                    $150.00</span
-                  >
-                  <span class="regular-price">$120.00</span>
+              </div>
 
-                  <div class="ratings">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+              <div class="col-lg col-6">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="./assets/asset 17.jpeg" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
+
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg col-6 d-lg-none d-blck">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="./assets/asset 17.jpeg" alt="" />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">DNK Yellow Shoes</div>
+                    <div class="product-for">Men</div>
+                    <span class="discount-price text-decoration-line-through">
+                      $150.00</span
+                    >
+                    <span class="regular-price">$120.00</span>
+
+                    <div class="ratings">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -369,142 +669,7 @@
           </div>
         </div>
 
-        <div class="main-feature-box">
-          <div class="row">
-            <div class="col">
-              <div class="product-box">
-                <div class="product-img">
-                  <img src="./assets/asset 13.jpeg" alt="" />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">DNK Yellow Shoes</div>
-                  <div class="product-for">Men</div>
-                  <span class="discount-price text-decoration-line-through">
-                    $150.00</span
-                  >
-                  <span class="regular-price">$120.00</span>
-
-                  <div class="ratings">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product-box">
-                <div class="product-img">
-                  <img id="nekles" src="./assets/asset 14.jpeg" alt="" />
-                </div>
-                <div class="product-content shoe-colour">
-                  <div class="product-name">DNK Yellow Shoes</div>
-                  <div class="product-for">Men</div>
-                  <span class="discount-price text-decoration-line-through">
-                    $150.00</span
-                  >
-                  <span class="regular-price">$120.00</span>
-                  <div class="colour-option">
-                    <button
-                      class="blue"
-                      onclick="changeImagetwo('black')"
-                    ></button>
-                    <button
-                      class="green"
-                      onclick="changeImagetwo('sky')"
-                    ></button>
-                    <button
-                      class="orange"
-                      onclick="changeImagetwo('pink')"
-                    ></button>
-                  </div>
-
-                  <div class="ratings">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="product-box">
-                <div class="product-img">
-                  <img src="./assets/asset 15.jpeg" alt="" />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">DNK Yellow Shoes</div>
-                  <div class="product-for">Men</div>
-                  <span class="discount-price text-decoration-line-through">
-                    $150.00</span
-                  >
-                  <span class="regular-price">$120.00</span>
-
-                  <div class="ratings">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="product-box">
-                <div class="product-img">
-                  <img src="./assets/asset 16.jpeg" alt="" />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">DNK Yellow Shoes</div>
-                  <div class="product-for">Men</div>
-                  <span class="discount-price text-decoration-line-through">
-                    $150.00</span
-                  >
-                  <span class="regular-price">$120.00</span>
-
-                  <div class="ratings">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="product-box">
-                <div class="product-img">
-                  <img src="./assets/asset 17.jpeg" alt="" />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">DNK Yellow Shoes</div>
-                  <div class="product-for">Men</div>
-                  <span class="discount-price text-decoration-line-through">
-                    $150.00</span
-                  >
-                  <span class="regular-price">$120.00</span>
-
-                  <div class="ratings">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- 2nd row -->
       </div>
     </div>
 
@@ -516,9 +681,9 @@
             <div class="special-items">
               <div class="offer">Limited Time offer</div>
               <h2>Special Edition</h2>
-              <p >
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec  
+                tellus, luctus nec
               </p>
               <h4>Buy This T-shirt At 20% Discount, Use Code OFF20</h4>
 
@@ -721,6 +886,9 @@
       "></script>
     <!-- shoe js -->
     <script src="./js/shoe.js"></script>
+
+    <!-- nav js -->
+    <script src="./js/nav.js"></script>
 
     <!-- Brand js -->
     <script src="./js/brand.js"></script>

@@ -25,6 +25,10 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding:0 30px;
+@include sm{
+padding: 0 0;
+}
+  
 }
 
 #brand-logo {

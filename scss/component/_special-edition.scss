@@ -76,6 +76,10 @@
         text-transform: uppercase;
         width: 30%;
 
+        @include sm{
+          width: 100%;
+        }
+
         &:hover {
           background-color: black;
           color: white;

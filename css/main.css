@@ -27,6 +27,11 @@ body {
   margin: 0 auto;
   padding: 0 30px;
 }
+@media only screen and (max-width: 576px) {
+  .custom-brand-container {
+    padding: 0 0;
+  }
+}
 
 #brand-logo img {
   height: auto;
@@ -36,42 +41,35 @@ body {
   margin-right: auto;
 }
 
-.nav-section {
-  width: 100%;
-  position: relative;
-  top: 0;
-}
-.nav-section .navbar {
+.nav-section .nav-wrapper {
   font-family: "Lato", sans-serif;
+  padding: 0 35px;
+  position: absolute;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.07);
-  z-index: 1000;
-  cursor: pointer;
 }
-.nav-section .navbar .nav-menu {
-  padding: 16px 35px;
+@media only screen and (max-width: 576px) {
+  .nav-section .nav-wrapper {
+    background-color: white;
+    padding: 0 0;
+  }
 }
-.nav-section .navbar .nav-menu .nav-content .nav-content-left a {
-  color: white;
-  text-decoration: none;
-  padding: 0 14.4px;
-  font-weight: 700;
-  font-size: 14px;
+.nav-section .nav-wrapper .nav-left-part .nav-left-section .navbar-nav .nav-item .nav-link {
+  font-size: 14.4px;
   line-height: 70px;
-  color: rgb(245, 247, 249);
+  padding-left: 14.4px;
+  padding-right: 14.4px;
+  color: white;
   text-transform: uppercase;
 }
-.nav-section .navbar .nav-menu .nav-content .nav-content-right {
-  margin-left: 600px;
-}
-.nav-section .navbar .nav-menu .nav-content .nav-content-right a {
+.nav-section .nav-wrapper .nav-right-section .navbar-nav .nav-item .nav-link {
   color: white;
-  text-decoration: none;
-  padding: 0 14.4px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 70px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
-
 .main-home-section {
   font-family: "Lato", sans-serif;
   background: url(/assets/asset\ 25.jpeg);
@@ -118,8 +116,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 20px;
   }
 }
 .main-home-section .home-section .home-content-title h1 {
@@ -199,18 +197,35 @@ body {
   padding-top: 80px;
   padding-bottom: 100px;
 }
+@media only screen and (max-width: 576px) {
+  .brand-category-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 .brand-category-section .category-section {
   font-family: "Lato", sans-serif;
   position: relative;
-  min-height: 500px;
+  height: 500px;
   color: white;
   margin-top: 50px;
 }
+@media only screen and (max-width: 576px) {
+  .brand-category-section .category-section {
+    height: 350px;
+    margin-top: 20px;
+  }
+}
 .brand-category-section .category-section .category-img img {
   width: 100%;
-  min-height: 500px;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (max-width: 576px) {
+  .brand-category-section .category-section .category-img img {
+    height: 350px;
+  }
 }
 .brand-category-section .category-section .overlay-img {
   padding: 40px;
@@ -230,6 +245,14 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+}
+@media only screen and (max-width: 576px) {
+  .brand-category-section .category-section .overlay-img {
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
 }
 .brand-category-section .category-section .overlay-img .image-headline h3 {
   font-size: 26px;
@@ -261,6 +284,11 @@ body {
   padding: 16px 28px;
   text-transform: uppercase;
   width: 50%;
+}
+@media only screen and (max-width: 576px) {
+  .brand-category-section .category-section .overlay-img .btn {
+    width: 100%;
+  }
 }
 .brand-category-section .category-section .overlay-img .btn:hover {
   background-color: black;
@@ -580,6 +608,11 @@ body {
   text-transform: uppercase;
   width: 30%;
 }
+@media only screen and (max-width: 576px) {
+  .special-wrapper .special-edition .special-items .btn {
+    width: 100%;
+  }
+}
 .special-wrapper .special-edition .special-items .btn:hover {
   background-color: black;
   color: white;
@@ -663,4 +696,26 @@ body {
   .offer-title h3 {
     font-size: 20px;
   }
+}
+
+.offcanvas .offcanvas-body {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.offcanvas .offcanvas-body ul {
+  padding-left: 0px;
+}
+.offcanvas .offcanvas-body ul li {
+  list-style: none;
+}
+.offcanvas .offcanvas-body ul li .context {
+  background-color: rgb(238, 242, 243);
+  padding: 15px 25px;
+}
+.offcanvas .offcanvas-body ul li .context a {
+  text-decoration: none;
+  color: black;
+}
+.offcanvas .offcanvas-body ul li .context a i {
+  font-size: 20px;
 }

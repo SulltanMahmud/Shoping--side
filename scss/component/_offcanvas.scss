@@ -1,0 +1,24 @@
+.offcanvas {
+    
+  .offcanvas-body {
+    padding-left: 0px;
+    padding-right: 0px;
+    ul {
+        padding-left: 0px;
+      li {
+        list-style: none;
+        .context {
+            background-color:rgb(238, 242, 243) ;
+          padding: 15px 25px;
+          a{
+            text-decoration: none;
+            color: black;
+            i{
+                font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
