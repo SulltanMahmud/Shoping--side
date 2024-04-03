@@ -11,14 +11,19 @@ body {
 }
 
 .custom-container {
-  max-width: 1400px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 30px;
 }
 @media only screen and (max-width: 576px) {
   .custom-container {
     padding-left: 25px;
     padding-right: 25px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .custom-container {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -31,6 +36,11 @@ body {
   .custom-brand-container {
     padding: 0 0;
   }
+}
+
+.e-container {
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 #brand-logo img {
@@ -127,6 +137,9 @@ body {
   text-align: center;
 }
 
+#offcanvasCart .offcanvas-header h5 {
+  font-size: 10px;
+}
 #offcanvasCart .offcanvas-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,19 +174,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
 }
 @media only screen and (max-width: 576px) {
   .main-home-section {
@@ -373,6 +373,11 @@ body {
     width: 100%;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .brand-category-section .category-section .overlay-img .btn {
+    width: 70%;
+  }
+}
 .brand-category-section .category-section .overlay-img .btn:hover {
   background-color: black;
   color: white;
@@ -382,6 +387,11 @@ body {
   font-family: "Lato", sans-serif;
   background-color: rgb(245, 247, 249);
   padding: 100px 0;
+}
+@media only screen and (max-width: 576px) {
+  .feature-product-section {
+    padding: 30px 0;
+  }
 }
 .feature-product-section .feature-headline {
   padding-bottom: 15px;
@@ -395,6 +405,13 @@ body {
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
   text-align: center;
+}
+@media only screen and (max-width: 576px) {
+  .feature-product-section .feature-headline h2 {
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 700;
+  }
 }
 .feature-product-section .border-line {
   width: 100px;
@@ -418,6 +435,13 @@ body {
   border: none;
   margin-right: 5px;
   margin-top: 5px;
+}
+@media only screen and (max-width: 576px) {
+  .feature-product-section .main-feature-box .product-box .product-content.shoe-colour button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
 }
 .feature-product-section .main-feature-box .product-box .product-content.shoe-colour button.blue {
   background-color: blue;
@@ -673,6 +697,20 @@ body {
   line-height: 28.8px;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 576px) {
+  .special-wrapper .special-edition .special-items h4 {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .special-wrapper .special-edition .special-items h4 {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
 .special-wrapper .special-edition .special-items .btn {
   border: none;
   border-radius: 0px;
@@ -696,6 +734,11 @@ body {
     width: 100%;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .special-wrapper .special-edition .special-items .btn {
+    width: 40%;
+  }
+}
 .special-wrapper .special-edition .special-items .btn:hover {
   background-color: black;
   color: white;
@@ -705,6 +748,12 @@ body {
   font-family: "Lato", sans-serif;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+@media only screen and (max-width: 576px) {
+  .quality-provide-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .quality-provide-section .small-container {
   margin-left: 90px;
@@ -778,6 +827,7 @@ body {
 @media only screen and (max-width: 576px) {
   .offer-title h3 {
     font-size: 20px;
+    text-align: center;
   }
 }
 

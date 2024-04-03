@@ -50,6 +50,8 @@ padding-bottom: 20px;
         padding-bottom: 20px;
       }
 
+      
+
       .image-headline {
         h3 {
           font-size: 26px;
@@ -83,6 +85,10 @@ padding-bottom: 20px;
         width: 50%;
         @include sm{
           width: 100%;
+        }
+
+        @include xl{
+          width: 70%;
         }
 
         &:hover {

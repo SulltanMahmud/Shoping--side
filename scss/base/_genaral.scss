@@ -11,13 +11,18 @@ body {
 }
 
 .custom-container {
-  max-width: 1400px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 30px;
+   
 
   @include sm {
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  @include xl{
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
