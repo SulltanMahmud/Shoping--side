@@ -8,6 +8,7 @@
   height: 100vh;
   @include sm {
     height: auto;
+   
   }
 
   display: flex;
@@ -18,14 +19,17 @@
   .home-section {
     padding-top: 227.875px;
     padding-bottom: 227.875px;
+    @include sm{
+      
+    }
 
     @include sm {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 80px;
-      padding-bottom: 20px;
+      padding-top: 140px;
+      padding-bottom: 75px;
     }
 
     .home-content-title {
@@ -37,7 +41,7 @@
         @include sm {
           font-size: 30px;
           text-align: center;
-          line-height: 50px;
+          line-height: 36px;
         }
       }
     }

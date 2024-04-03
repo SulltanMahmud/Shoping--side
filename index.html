@@ -58,6 +58,18 @@
                 </ul>
               </div>
             </div>
+
+            <div class="mobile-view d-flex d-lg-none d-md-none d-block">
+              <div class="money">$0.00</div>
+              <div class="cart">
+                <div class="bag">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <div class="zero-sec">
+                    <div class="zero">0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- togggle button -->
             <button
               class="navbar-toggler"
@@ -68,7 +80,21 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon">
+                <svg
+                  class="ast-mobile-svg ast-menu-svg"
+                  fill="currentColor"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"
+                  ></path>
+                </svg>
+              </span>
             </button>
 
             <!-- offcanvas -->
@@ -147,8 +173,9 @@
               </div>
             </div>
 
-            <!-- Nav right section -->
+            <!-- mobile view -->
 
+            <!-- Nav right section -->
             <div class="nav-right-section d-none d-lg-block">
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -161,9 +188,22 @@
                   <a class="nav-link" href="#">$0.00</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-disabled="true">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                  </a>
+                  <button
+                    class="nav-link"
+                    aria-disabled="true"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasCart"
+                    aria-controls="offcanvasCart"
+                  >
+                    <!-- offcanvas cart -->
+
+                    <!--  -->
+                    <div class="cart-img">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                      <div class="zero-box-item text-center">0</div>
+                    </div>
+                  </button>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" aria-disabled="true">
@@ -174,6 +214,28 @@
             </div>
           </div>
         </nav>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasCart"
+          aria-labelledby="offcanvasCartLabel"
+        >
+          <div class="offcanvas-header border">
+            <h5 class="offcanvas-title" id="offcanvasCartLabel">
+              Shoping Cart
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>No products in the cart</p>
+            <button type="button" class="btn btn-primary">Continue Shoping</button>
+          </div>
+        </div>
 
         <!-- Toggle and offcanvas -->
       </div>
@@ -185,7 +247,7 @@
         <div class="overlay"></div>
         <div class="custom-container">
           <div class="row">
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-sm-12 col-lg-7">
               <div class="home-section">
                 <div class="home-content-title">
                   <h1>Raining Offers For Hot Summer!</h1>
@@ -336,7 +398,7 @@
     <!-- Product section -->
 
     <div class="feature-product-section">
-      <div class="custom-brand-container">
+      <div class="custo-container">
         <div class="feature-headline">
           <h2>Featured Products</h2>
         </div>
