@@ -142,7 +142,7 @@ body {
 }
 
 #offcanvasCart .offcanvas-header h5 {
-  font-size: 13px;
+  font-size: 10px;
 }
 #offcanvasCart .offcanvas-body {
   display: -webkit-box;
@@ -164,12 +164,20 @@ body {
   font-size: 14px;
 }
 #offcanvasCart .offcanvas-body button {
-  margin-top: 490px;
+  margin-top: 580px;
   width: 100%;
   border: none;
   border-radius: 0px;
 }
+@media only screen and (max-width: 1024px) {
+  #offcanvasCart .offcanvas-body button {
+    margin-top: 490px;
+  }
+}
 
+#offcanvasCarttwo .offcanvas-header h5 {
+  font-size: 10px;
+}
 #offcanvasCarttwo .offcanvas-body {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -80,17 +80,17 @@
               color: white;
               font-size: 14px;
               font-weight: 500;
-               
+
               padding-left: 13px;
               padding-right: 13px;
 
-              .cart-img{
+              .cart-img {
                 position: relative;
-                i{
+                i {
                   font-size: 18px;
                 }
 
-                .zero-box-item{
+                .zero-box-item {
                   position: absolute;
                   background-color: white;
                   color: black;
@@ -110,37 +110,44 @@
   }
 }
 
-#offcanvasCart{
-  .offcanvas-header{
-    h5{
-      font-size: 13px;
+#offcanvasCart {
+  .offcanvas-header {
+    h5 {
+      font-size: 10px;
     }
   }
-  .offcanvas-body{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-    p{
-       text-align: center;
-       font-size: 14px;
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      text-align: center;
+      font-size: 14px;
     }
 
-    button{
-      margin-top: 490px;
+    button {
+      margin-top: 580px;
       width: 100%;
       border: none;
       border-radius: 0px;
+
+      @include xl{
+        margin-top: 490px;
+      }
     }
   }
 }
 
-
-#offcanvasCarttwo{
-  .offcanvas-body{
-     display: flex;
-     align-items: center;
-     justify-content: center;
+#offcanvasCarttwo {
+  .offcanvas-header {
+    h5 {
+      font-size: 10px;
+    }
+  }
+  .offcanvas-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
- 
