@@ -5,8 +5,9 @@ const brandlogo = new Splide("#brand-logo", {
   pagination: false,
   type: "loop",
   perPage: 5,
+  
   // autoplay: true,
-  interval: 4000,
+  interval: 5000,
   breakpoints: {
     576: {
       perPage: 1,

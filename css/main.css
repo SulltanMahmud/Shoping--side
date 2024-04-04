@@ -10,20 +10,25 @@ body {
           box-sizing: border-box;
 }
 
+.custom-feature-container {
+  margin-left: 46px;
+  margin-right: 46px;
+}
+
 .custom-container {
   max-width: 1140px;
   margin: 0 auto;
-}
-@media only screen and (max-width: 576px) {
-  .custom-container {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
 }
 @media only screen and (max-width: 1024px) {
   .custom-container {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .custom-container {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -77,13 +82,18 @@ body {
   text-transform: uppercase;
 }
 .nav-section .nav-wrapper .navbar .mobile-view {
-  margin-left: 100px;
+  margin-left: 140px;
 }
 .nav-section .nav-wrapper .navbar .mobile-view .money {
   margin-right: 7px;
+  font-size: 15px;
+  line-height: 39px;
+  font-weight: 600;
 }
 .nav-section .nav-wrapper .navbar .mobile-view .bag {
   position: relative;
+  margin-left: 5px;
+  top: 5px;
 }
 .nav-section .nav-wrapper .navbar .mobile-view .bag i {
   font-size: 15px;
@@ -99,9 +109,10 @@ body {
 }
 .nav-section .nav-wrapper .navbar .mobile-view .bag .zero-sec .zero {
   position: absolute;
-  top: -5px;
-  left: 3px;
+  top: -2px;
+  left: 4px;
   color: white;
+  font-size: 13px;
 }
 .nav-section .nav-wrapper .navbar .navbar-toggler {
   background-color: black;
@@ -127,7 +138,7 @@ body {
   position: relative;
 }
 .nav-section .nav-wrapper .navbar .nav-right-section .navbar-nav .nav-item .nav-link .cart-img i {
-  font-size: 18px;
+  font-size: 15px;
 }
 .nav-section .nav-wrapper .navbar .nav-right-section .navbar-nav .nav-item .nav-link .cart-img .zero-box-item {
   position: absolute;
@@ -136,13 +147,22 @@ body {
   top: -11px;
   left: 8px;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
   text-align: center;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 #offcanvasCart .offcanvas-header h5 {
-  font-size: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+}
+#offcanvasCart .offcanvas-header .btn-close {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  --bs-btn-close-opacity: 1;
 }
 #offcanvasCart .offcanvas-body {
   display: -webkit-box;
@@ -160,11 +180,13 @@ body {
           justify-content: center;
 }
 #offcanvasCart .offcanvas-body p {
-  text-align: center;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
 }
 #offcanvasCart .offcanvas-body button {
-  margin-top: 580px;
+  position: absolute;
+  bottom: 0px;
   width: 100%;
   border: none;
   border-radius: 0px;
@@ -176,7 +198,9 @@ body {
 }
 
 #offcanvasCarttwo .offcanvas-header h5 {
-  font-size: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
 }
 #offcanvasCarttwo .offcanvas-body {
   display: -webkit-box;
@@ -188,6 +212,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+#offcanvasCarttwo .offcanvas-body p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
 }
 
 .main-home-section {
@@ -222,7 +251,7 @@ body {
   padding-top: 227.875px;
   padding-bottom: 227.875px;
   position: relative;
-  z-index: 1000;
+  z-index: 2;
 }
 @media only screen and (max-width: 576px) {
   .main-home-section .home-section {
@@ -547,7 +576,7 @@ body {
 }
 @media only screen and (max-width: 576px) {
   .footer-section .dhk-logo {
-    margin-left: 40%;
+    margin-left: 38%;
     margin-bottom: 30px;
   }
 }
@@ -865,10 +894,17 @@ body {
 .offer-title {
   padding: 30px;
 }
+@media only screen and (max-width: 1024px) {
+  .offer-title {
+    padding-left: 0px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .offer-title {
     padding-left: 0px;
     padding-right: 0px;
+    padding-top: 35px;
+    padding-bottom: 20px;
   }
 }
 .offer-title h3 {
@@ -886,6 +922,10 @@ body {
   }
 }
 
+.offcanvas .btn-close {
+  --bs-btn-close-focus-shadow:none;
+  --bs-btn-close-opacity: 1;
+}
 .offcanvas .offcanvas-body {
   padding-left: 0px;
   padding-right: 0px;
@@ -899,6 +939,9 @@ body {
 .offcanvas .offcanvas-body ul li .context {
   background-color: rgb(238, 242, 243);
   padding: 15px 25px;
+}
+.offcanvas .offcanvas-body ul li .context.contact {
+  background-color: white;
 }
 .offcanvas .offcanvas-body ul li .context a {
   text-decoration: none;

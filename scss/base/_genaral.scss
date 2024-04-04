@@ -10,21 +10,27 @@ body {
   box-sizing: border-box;
 }
 
+.custom-feature-container {
+  margin-left: 46px;
+  margin-right: 46px;
+   
+
+  
+}
+
 .custom-container {
   max-width: 1140px;
   margin: 0 auto;
-
-  @include sm {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
 
   @include xl {
     padding-left: 50px;
     padding-right: 50px;
   }
 
-   
+  @include sm {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .custom-brand-container {

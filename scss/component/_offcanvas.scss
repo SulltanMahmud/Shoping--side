@@ -1,21 +1,27 @@
 .offcanvas {
-
-    
+   .btn-close{
+      
+      --bs-btn-close-focus-shadow:none;
+       --bs-btn-close-opacity: 1;
+    }
   .offcanvas-body {
     padding-left: 0px;
     padding-right: 0px;
     ul {
-        padding-left: 0px;
+      padding-left: 0px;
       li {
         list-style: none;
         .context {
-            background-color:rgb(238, 242, 243) ;
+          &.contact{
+            background-color: white;
+          }
+          background-color: rgb(238, 242, 243);
           padding: 15px 25px;
-          a{
+          a {
             text-decoration: none;
             color: black;
-            i{
-                font-size: 20px;
+            i {
+              font-size: 20px;
             }
           }
         }
