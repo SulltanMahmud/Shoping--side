@@ -76,14 +76,23 @@
           font-weight: 700;
           line-height: 20.8px;
           font-size: 16px;
-          margin-bottom: 8px;
+          margin-bottom: 7px;
+
+          @include sm{
+            font-size: 15px;
+            line-height: 19px;
+          }
         }
         .product-for {
           font-size: 13.6px;
           font-weight: 400;
           line-height: 17.68px;
-          margin-bottom: 6.8px;
+          margin-bottom: 6px;
           opacity: 0.6;
+
+          @include sm{
+            margin-bottom: 3px;
+          }
         }
 
         .discount-price {
@@ -107,6 +116,11 @@
           font-weight: 400;
           line-height: 13.712px;
           margin-top: 6.856px;
+
+          @include sm{
+            margin-top: 3px;
+            font-size: 10px;
+          }
         }
       }
     }

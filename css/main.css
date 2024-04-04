@@ -35,12 +35,6 @@ body {
 .custom-brand-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 30px;
-}
-@media only screen and (max-width: 576px) {
-  .custom-brand-container {
-    padding: 0 0;
-  }
 }
 
 .e-container {
@@ -553,14 +547,25 @@ body {
   font-weight: 700;
   line-height: 20.8px;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
+}
+@media only screen and (max-width: 576px) {
+  .feature-product-section .main-feature-box .product-box .product-content .product-name {
+    font-size: 15px;
+    line-height: 19px;
+  }
 }
 .feature-product-section .main-feature-box .product-box .product-content .product-for {
   font-size: 13.6px;
   font-weight: 400;
   line-height: 17.68px;
-  margin-bottom: 6.8px;
+  margin-bottom: 6px;
   opacity: 0.6;
+}
+@media only screen and (max-width: 576px) {
+  .feature-product-section .main-feature-box .product-box .product-content .product-for {
+    margin-bottom: 3px;
+  }
 }
 .feature-product-section .main-feature-box .product-box .product-content .discount-price {
   font-size: 14.4px;
@@ -582,6 +587,12 @@ body {
   font-weight: 400;
   line-height: 13.712px;
   margin-top: 6.856px;
+}
+@media only screen and (max-width: 576px) {
+  .feature-product-section .main-feature-box .product-box .product-content .ratings {
+    margin-top: 3px;
+    font-size: 10px;
+  }
 }
 
 .footer-section {
@@ -644,6 +655,12 @@ body {
   line-height: 29.7143px;
   text-align: left;
   color: rgba(0, 0, 0, 0.51);
+}
+@media only screen and (max-width: 576px) {
+  .footer-section .male-section ul li a {
+    font-size: 15px;
+    line-height: 27px;
+  }
 }
 .footer-section .male-section ul li a:hover {
   color: blue;
@@ -716,6 +733,7 @@ body {
   background-color: rgb(245, 247, 249);
 }
 .special-wrapper .special-edition {
+  font-family: "Lato", sans-serif;
   background-image: url(/assets/asset\ 30.jpeg);
   background-attachment: fixed;
   background-position: center center;

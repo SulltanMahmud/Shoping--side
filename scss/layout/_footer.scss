@@ -57,6 +57,11 @@
           text-align: left;
           color: rgba(0, 0, 0, 0.51);
 
+          @include sm{
+            font-size: 15px;
+            line-height: 27px;
+          }
+
           &:hover {
             color: blue;
           }
@@ -74,6 +79,7 @@
 
       @include sm {
         text-align: center;
+          
       }
     }
     .input-group {
