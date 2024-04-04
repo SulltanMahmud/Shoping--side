@@ -247,11 +247,15 @@ body {
     height: auto;
   }
 }
+.main-home-section .height {
+  height: 100%;
+}
 .main-home-section .home-section {
   padding-top: 227.875px;
   padding-bottom: 227.875px;
   position: relative;
   z-index: 2;
+  height: 100%;
 }
 @media only screen and (max-width: 576px) {
   .main-home-section .home-section {
