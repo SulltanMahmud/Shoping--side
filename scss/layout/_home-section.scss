@@ -6,9 +6,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
+
   @include sm {
     height: auto;
-   
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+
+    @include sm {
+      height: auto;
+    }
   }
 
   // display: flex;
@@ -19,8 +33,14 @@
   .home-section {
     padding-top: 227.875px;
     padding-bottom: 227.875px;
-    @include sm{
-      
+    position: relative;
+    z-index: 1000;
+    @include sm {
+      z-index: 0;
+    }
+
+    @include md {
+      z-index: 0;
     }
 
     @include sm {

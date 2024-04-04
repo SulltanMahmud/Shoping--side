@@ -59,9 +59,18 @@
               </div>
             </div>
 
+            <!-- mobile view -->
+
             <div class="mobile-view d-flex d-lg-none d-md-none d-block">
               <div class="money">$0.00</div>
-              <div class="cart">
+              <div
+                class="cart"
+                aria-disabled="true"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasCarttwo"
+                aria-controls="offcanvasCarttwo"
+              >
                 <div class="bag">
                   <i class="fa-solid fa-bag-shopping"></i>
                   <div class="zero-sec">
@@ -173,8 +182,6 @@
               </div>
             </div>
 
-            <!-- mobile view -->
-
             <!-- Nav right section -->
             <div class="nav-right-section d-none d-lg-block">
               <ul class="navbar-nav">
@@ -236,6 +243,30 @@
             <button type="button" class="btn btn-primary">
               Continue Shoping
             </button>
+          </div>
+        </div>
+
+        <!-- Mobile cart offcanvas -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasCarttwo"
+          aria-labelledby="offcanvasCartLabel"
+        >
+          <div class="offcanvas-header border">
+            <h5 class="offcanvas-title" id="offcanvasCartLabel">
+              Shoping Cart
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body" id="secondoff">
+            <p>No products in the cart</p>
+            
           </div>
         </div>
 
@@ -334,7 +365,7 @@
         <!-- brand-category =-img -->
 
         <div class="row">
-          <div class="col-lg-4   col-12">
+          <div class="col-lg-4 col-12">
             <div class="category-section">
               <div class="category-img">
                 <img src="./assets/asset 26.jpeg" alt="" />
@@ -354,7 +385,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4   col-12">
+          <div class="col-lg-4 col-12">
             <div class="category-section">
               <div class="category-img">
                 <img src="./assets/asset 27.jpeg" alt="" />
@@ -374,7 +405,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4   col-12">
+          <div class="col-lg-4 col-12">
             <div class="category-section">
               <div class="category-img">
                 <img src="./assets/asset 28.jpeg" alt="" />
@@ -389,7 +420,7 @@
                   </p>
                 </div>
                 <button type="button" class="btn btn-outline-secondary">
-                  Check out
+                  Check
                 </button>
               </div>
             </div>
@@ -748,7 +779,7 @@
               <h4>Buy This T-shirt At 20% Discount, Use Code OFF20</h4>
 
               <button type="button" class="btn btn-outline-secondary">
-                SHop Now
+                SHop
               </button>
             </div>
           </div>
@@ -825,7 +856,9 @@
 
     <div class="footer-section border-bottom">
       <div class="custom-container">
-        <div class="row justify-content-sm-center   align-items-sm-center align-items-md-start">
+        <div
+          class="row justify-content-sm-center align-items-sm-center align-items-md-start"
+        >
           <div class="col-lg-5 col-md-4 col-12">
             <div class="dhk-logo">
               <img src="./assets/asset 1.png" alt="" />

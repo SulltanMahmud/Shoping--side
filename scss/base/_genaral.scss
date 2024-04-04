@@ -13,17 +13,18 @@ body {
 .custom-container {
   max-width: 1140px;
   margin: 0 auto;
-   
 
   @include sm {
     padding-left: 25px;
     padding-right: 25px;
   }
 
-  @include xl{
+  @include xl {
     padding-left: 50px;
     padding-right: 50px;
   }
+
+   
 }
 
 .custom-brand-container {
@@ -35,7 +36,7 @@ body {
   }
 }
 
-.e-container{
+.e-container {
   margin-left: 120px;
   margin-right: 120px;
 }

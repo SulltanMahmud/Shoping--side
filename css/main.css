@@ -51,6 +51,10 @@ body {
   margin-right: auto;
 }
 
+.nav-section {
+  position: relative;
+  z-index: 999;
+}
 .nav-section .nav-wrapper .navbar {
   font-family: "Lato", sans-serif;
   padding: 0 35px;
@@ -138,7 +142,7 @@ body {
 }
 
 #offcanvasCart .offcanvas-header h5 {
-  font-size: 10px;
+  font-size: 13px;
 }
 #offcanvasCart .offcanvas-body {
   display: -webkit-box;
@@ -160,10 +164,22 @@ body {
   font-size: 14px;
 }
 #offcanvasCart .offcanvas-body button {
-  margin-top: 420px;
+  margin-top: 490px;
   width: 100%;
   border: none;
   border-radius: 0px;
+}
+
+#offcanvasCarttwo .offcanvas-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-home-section {
@@ -174,15 +190,41 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 @media only screen and (max-width: 576px) {
   .main-home-section {
     height: auto;
   }
 }
+.main-home-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: 576px) {
+  .main-home-section .overlay {
+    height: auto;
+  }
+}
 .main-home-section .home-section {
   padding-top: 227.875px;
   padding-bottom: 227.875px;
+  position: relative;
+  z-index: 1000;
+}
+@media only screen and (max-width: 576px) {
+  .main-home-section .home-section {
+    z-index: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-home-section .home-section {
+    z-index: 0;
+  }
 }
 @media only screen and (max-width: 576px) {
   .main-home-section .home-section {
@@ -794,6 +836,11 @@ body {
   line-height: 21.6px;
   margin-bottom: 12px;
   color: black;
+}
+@media only screen and (max-width: 1024px) {
+  .quality-provide-section .small-container .quality-container .title {
+    text-align: center;
+  }
 }
 .quality-provide-section .small-container .quality-container p {
   font-size: 16px;

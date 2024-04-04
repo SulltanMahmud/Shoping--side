@@ -39,6 +39,11 @@
         line-height: 21.6px;
         margin-bottom: 12px;
         color: black;
+ 
+
+        @include xl{
+          text-align: center;
+        }
       }
 
       p {
