@@ -7,6 +7,11 @@
 padding-bottom: 20px;
 
   }
+  .brand-logo{
+     @include sm{
+      padding: 20px 0;
+     }
+  }
 
   .category-section {
     font-family: "Lato", sans-serif;

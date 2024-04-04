@@ -189,7 +189,7 @@ body {
 }
 #offcanvasCart .offcanvas-body button {
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
   width: 100%;
   border: none;
   border-radius: 0px;
@@ -370,6 +370,11 @@ body {
   .brand-category-section {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .brand-category-section .brand-logo {
+    padding: 20px 0;
   }
 }
 .brand-category-section .category-section {
