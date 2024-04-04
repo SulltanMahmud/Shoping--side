@@ -168,6 +168,7 @@
 }
 
 #offcanvasCarttwo {
+  height: 650px;
   .offcanvas-header {
     h5 {
       font-size: 16px;
@@ -175,6 +176,13 @@
       font-weight: 500;
     }
   }
+
+  button{
+    border-radius: 0px;
+  }
+   
+
+  
   .offcanvas-body {
     p {
       font-size: 16px;

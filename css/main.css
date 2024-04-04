@@ -200,10 +200,16 @@ body {
   }
 }
 
+#offcanvasCarttwo {
+  height: 650px;
+}
 #offcanvasCarttwo .offcanvas-header h5 {
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
+}
+#offcanvasCarttwo button {
+  border-radius: 0px;
 }
 #offcanvasCarttwo .offcanvas-body {
   display: -webkit-box;
