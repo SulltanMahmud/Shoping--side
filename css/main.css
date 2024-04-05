@@ -11,8 +11,20 @@ body {
 }
 
 .custom-feature-container {
-  margin-left: 46px;
-  margin-right: 46px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1440px) {
+  .custom-feature-container {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .custom-feature-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 .custom-container {
@@ -195,7 +207,7 @@ body {
 }
 
 #offcanvasCarttwo {
-  height: 650px;
+  height: 100%;
 }
 #offcanvasCarttwo .offcanvas-header h5 {
   font-size: 16px;
