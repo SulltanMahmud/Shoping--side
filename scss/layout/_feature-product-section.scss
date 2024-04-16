@@ -8,6 +8,7 @@
   }
   .feature-headline {
     padding-bottom: 15px;
+ 
     
     h2 {
       font-size: 42px;
@@ -15,7 +16,10 @@
       line-height: 54.6px;
       text-size-adjust: 100%;
       text-align: center;
-
+      @include md{
+        font-size: 25px;
+        line-height: 33px;
+      }
       @include sm {
         font-size: 25px;
         line-height: 33px;
@@ -33,7 +37,14 @@
 
   .main-feature-box {
     padding-top: 50px;
+
+    @include sm{
+      padding-top: 30px;
+    }
     .product-box {
+      @include md{
+        padding-bottom: 20px;
+      }
       .product-img {
         img {
           width: 100%;

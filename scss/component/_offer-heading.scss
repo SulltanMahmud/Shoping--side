@@ -1,8 +1,12 @@
 .offer-title {
   padding: 30px;
 
+
   @include xl{
     padding-left: 0px;
+  }
+  @include md{
+    padding: 50px 0 ;
   }
 
   @include  sm {
@@ -19,6 +23,10 @@
     line-height: 39px;
     text-transform: uppercase;
 
+    @include md{
+     font-size: 20px;
+     line-height: 30px; 
+    }
     @include sm {
       font-size: 20px;
       text-align: center;

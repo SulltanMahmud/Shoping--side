@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero Section</title>
+<style>
+  /* Style for the hero section */
+  .hero {
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Adjust background color */
+    overflow: hidden;
+  }
+  
+  /* Style for the content within the hero section */
+  .hero-content {
+    position: absolute;
+    left: calc(50% - 300px); /* Adjust the width of your content */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px; /* Adjust the width of your content */
+    padding: 20px;
+    background-color: #fff; /* Adjust background color */
+    border: 1px solid #ccc; /* Adjust border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust box shadow */
+    text-align: center;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .hero-content {
+      width: 80%; /* Adjust width for smaller screens */
+      left: calc(50% - 40%); /* Adjust left position for smaller screens */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-content">
+    <!-- Your content goes here -->
+    <h1>Welcome to My Website</h1>
+    <p>This is the hero section of my website.</p>
+  </div>
+</div>
+
+</body>
+</html>

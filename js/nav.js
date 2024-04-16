@@ -1,13 +1,16 @@
 function changeNavImage() {
   var navImg = document.getElementById("navimg");
+  let navsec = document.querySelector(".navbar");
   if (window.innerWidth <= 768) {
     navImg.src = "./assets/asset 1.png";
     navImg.style.width = "70px";
     navImg.style.height = "50px";
-  }
-  else{
+    console.log("sacsacasc", navsec);
+    navsec.style.backgroundColor = "white";
+  } else {
     navImg.src = "./assets/asset 0.png";
     navImg.style.width = "147px";
+    navsec.style.backgroundColor = "";
   }
 }
 

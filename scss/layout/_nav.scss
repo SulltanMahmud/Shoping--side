@@ -8,6 +8,10 @@
       position: absolute;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.07);
+
+      @include md {
+        padding: 8px 10px;
+      }
       @include sm {
         background-color: white;
         padding: 0 0;
@@ -31,6 +35,10 @@
 
       .mobile-view {
         margin-left: 140px;
+
+        @include xsm {
+          margin-left: 70px;
+        }
         .money {
           margin-right: 7px;
           font-size: 15px;
@@ -83,7 +91,22 @@
       }
 
       .nav-right-section {
+        .res-colour {
+          @include md {
+            color: black !important;
+          }
+        }
+
+        .pd {
+          padding-right: 0px !important;
+        }
         .navbar-nav {
+          @include md {
+            flex-direction: row;
+          }
+          @include sm {
+            flex-direction: row;
+          }
           .nav-item {
             .nav-link {
               color: white;
@@ -93,12 +116,20 @@
               padding-left: 13px;
               padding-right: 13px;
 
+              @include md {
+                font-weight: 700;
+              }
+
+              @include sm{
+                font-weight: 700;
+              }
+
               .cart-img {
                 position: relative;
                 // top: 50%;
                 // left: 50%;
                 // transform: translate(-50%, -50%);
-               
+
                 i {
                   font-size: 15px;
                 }
@@ -107,7 +138,7 @@
                   position: absolute;
                   background-color: white;
                   color: black;
-                
+
                   top: -11px;
                   left: 8px;
                   border-radius: 50%;
@@ -115,10 +146,15 @@
                   height: 18px;
                   width: 18px;
                   border-radius: 50%;
-                  
+
                   text-align: center;
                   font-size: 12px;
                   font-weight: 900;
+
+                  @include md {
+                    background-color: black;
+                    color: white;
+                  }
                 }
               }
             }
@@ -177,12 +213,10 @@
     }
   }
 
-  button{
+  button {
     border-radius: 0px;
   }
-   
 
-  
   .offcanvas-body {
     p {
       font-size: 16px;

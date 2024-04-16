@@ -3,6 +3,10 @@
   padding-top: 75px;
   padding-bottom: 100px;
 
+  @include md{
+    padding-top: 50px;
+  }
+
   .dhk-logo {
     margin-bottom: 45px;
     @include sm {
