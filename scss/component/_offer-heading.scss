@@ -22,6 +22,12 @@
     text-align: left;
     line-height: 39px;
     text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+
+    &:hover{
+      color: rgb(43, 43, 255);
+    }
 
     @include md{
      font-size: 20px;

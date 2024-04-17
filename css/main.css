@@ -122,44 +122,6 @@ body {
   color: white;
   text-transform: uppercase;
 }
-.nav-section .nav-wrapper .navbar .mobile-view {
-  margin-left: 140px;
-}
-@media only screen and (max-width: 425px) {
-  .nav-section .nav-wrapper .navbar .mobile-view {
-    margin-left: 70px;
-  }
-}
-.nav-section .nav-wrapper .navbar .mobile-view .money {
-  margin-right: 7px;
-  font-size: 15px;
-  line-height: 39px;
-  font-weight: 600;
-}
-.nav-section .nav-wrapper .navbar .mobile-view .bag {
-  position: relative;
-  margin-left: 5px;
-  top: 5px;
-}
-.nav-section .nav-wrapper .navbar .mobile-view .bag i {
-  font-size: 15px;
-}
-.nav-section .nav-wrapper .navbar .mobile-view .bag .zero-sec {
-  background-color: black;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  position: absolute;
-  top: -3px;
-  left: 8px;
-}
-.nav-section .nav-wrapper .navbar .mobile-view .bag .zero-sec .zero {
-  position: absolute;
-  top: -2px;
-  left: 4px;
-  color: white;
-  font-size: 13px;
-}
 .nav-section .nav-wrapper .navbar .navbar-toggler {
   background-color: black;
   border-radius: 0px;
@@ -182,6 +144,14 @@ body {
 }
 .nav-section .nav-wrapper .navbar .nav-right-section .pd {
   padding-right: 0px !important;
+}
+@media only screen and (max-width: 992px) {
+  .nav-section .nav-wrapper .navbar .nav-right-section .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 @media only screen and (max-width: 768px) {
   .nav-section .nav-wrapper .navbar .nav-right-section .navbar-nav {
@@ -235,6 +205,12 @@ body {
   text-align: center;
   font-size: 12px;
   font-weight: 900;
+}
+@media only screen and (max-width: 992px) {
+  .nav-section .nav-wrapper .navbar .nav-right-section .navbar-nav .nav-item .nav-link .cart-img .zero-box-item {
+    background-color: black !important;
+    color: white;
+  }
 }
 @media only screen and (max-width: 768px) {
   .nav-section .nav-wrapper .navbar .nav-right-section .navbar-nav .nav-item .nav-link .cart-img .zero-box-item {
@@ -362,9 +338,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -905,7 +878,6 @@ body {
 }
 @media only screen and (max-width: 576px) {
   .footer-section .subscribe-section .btn {
-    width: 35%;
     margin-bottom: 20px;
   }
 }
@@ -1091,7 +1063,7 @@ body {
     text-align: center;
   }
 }
-.special-wrapper .special-edition .special-items .btn {
+.special-wrapper .special-edition .btn {
   border: none;
   border-radius: 0px;
   color: black;
@@ -1107,24 +1079,13 @@ body {
   line-height: 14px;
   padding: 16px 28px;
   text-transform: uppercase;
-  width: 30%;
-}
-@media only screen and (max-width: 1024px) {
-  .special-wrapper .special-edition .special-items .btn {
-    width: 40%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .special-wrapper .special-edition .special-items .btn {
-    width: 30%;
-  }
 }
 @media only screen and (max-width: 576px) {
-  .special-wrapper .special-edition .special-items .btn {
+  .special-wrapper .special-edition .btn {
     width: 100%;
   }
 }
-.special-wrapper .special-edition .special-items .btn:hover {
+.special-wrapper .special-edition .btn:hover {
   background-color: black;
   color: white;
 }
@@ -1139,10 +1100,6 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-}
-.quality-provide-section .small-container {
-  margin-left: 90px;
-  margin-right: 90px;
 }
 @media only screen and (max-width: 768px) {
   .quality-provide-section .small-container {
@@ -1231,6 +1188,11 @@ body {
   text-align: left;
   line-height: 39px;
   text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+.offer-title h3:hover {
+  color: rgb(43, 43, 255);
 }
 @media only screen and (max-width: 768px) {
   .offer-title h3 {

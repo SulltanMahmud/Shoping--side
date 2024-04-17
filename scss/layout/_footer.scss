@@ -2,7 +2,7 @@
   font-family: "Lato", sans-serif;
   padding-top: 75px;
   padding-bottom: 100px;
-  @include xl{
+  @include xl {
     padding-bottom: 0px;
   }
   @include md {
@@ -13,9 +13,9 @@
   .dhk-logo {
     margin-bottom: 45px;
     @include sm {
-     display: flex;
-     align-items: center;
-     justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     img {
       width: 90px;
@@ -79,12 +79,11 @@
   }
 
   .subscribe-section {
-    @include sm{
+    @include sm {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
     }
     .title {
       font-size: 22px;
@@ -105,7 +104,7 @@
       }
     }
     .btn {
-       font-family: "Lato", sans-serif;
+      font-family: "Lato", sans-serif;
       margin-top: 10px;
       border-radius: 0px;
       text-transform: uppercase;
@@ -114,11 +113,10 @@
       font-size: 13px;
       line-height: 13px;
       font-weight: 700;
-      @include sm{
-        width: 35%;
+
+      @include sm {
         margin-bottom: 20px;
       }
-     
     }
   }
 
@@ -131,18 +129,16 @@
       gap: 10px;
     }
     .footer-left {
-      
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 27.85px;
-        color: rgb(51, 51, 51);
-        text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 27.85px;
+      color: rgb(51, 51, 51);
+      text-decoration: none;
 
-        @include sm{
-          font-size: 13px;
-          // line-height: 20px;
-        }
-      
+      @include sm {
+        font-size: 13px;
+        // line-height: 20px;
+      }
     }
     .footer-right {
       i {

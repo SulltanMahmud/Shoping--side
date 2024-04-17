@@ -105,7 +105,10 @@
         }
       }
 
-      .btn {
+       
+    }
+
+    .btn {
         border: none;
         border-radius: 0px;
         color: black;
@@ -118,14 +121,14 @@
         line-height: 14px;
         padding: 16px 28px;
         text-transform: uppercase;
-        width: 30%;
+       
 
-        @include xl {
-          width: 40%;
-        }
-        @include md {
-          width: 30%;
-        }
+        // @include xl {
+        //   width: 40%;
+        // }
+        // @include md {
+        //   width: 30%;
+        // }
         @include sm {
           width: 100%;
         }
@@ -135,6 +138,5 @@
           color: white;
         }
       }
-    }
   }
 }

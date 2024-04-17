@@ -33,46 +33,7 @@
         }
       }
 
-      .mobile-view {
-        margin-left: 140px;
-
-        @include xsm {
-          margin-left: 70px;
-        }
-        .money {
-          margin-right: 7px;
-          font-size: 15px;
-          line-height: 39px;
-          font-weight: 600;
-        }
-        .bag {
-          position: relative;
-          margin-left: 5px;
-          top: 5px;
-
-          i {
-            font-size: 15px;
-          }
-
-          .zero-sec {
-            background-color: black;
-            height: 16px;
-            width: 16px;
-            border-radius: 50%;
-
-            position: absolute;
-            top: -3px;
-            left: 8px;
-            .zero {
-              position: absolute;
-              top: -2px;
-              left: 4px;
-              color: white;
-              font-size: 13px;
-            }
-          }
-        }
-      }
+      
 
       .navbar-toggler {
         background-color: black;
@@ -101,6 +62,9 @@
           padding-right: 0px !important;
         }
         .navbar-nav {
+          @include lg {
+            flex-direction: row;
+          }
           @include md {
             flex-direction: row;
           }
@@ -150,7 +114,10 @@
                   text-align: center;
                   font-size: 12px;
                   font-weight: 900;
-
+                  @include lg {
+                    background-color: black !important;
+                    color: white;
+                  }
                   @include md {
                     background-color: black;
                     color: white;
@@ -164,8 +131,6 @@
     }
   }
 }
-
-
 
 #offcanvasCart {
   .offcanvas-header {

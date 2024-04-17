@@ -1,7 +1,7 @@
 function changeNavImage() {
   var navImg = document.getElementById("navimg");
   let navsec = document.querySelector(".navbar");
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 920) {
     navImg.src = "./assets/asset 1.png";
     navImg.style.width = "70px";
     navImg.style.height = "50px";
