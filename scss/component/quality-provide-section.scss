@@ -3,7 +3,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
-  @include sm{
+  @include sm {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -12,6 +12,10 @@
     margin-left: 90px;
     margin-right: 90px;
 
+    @include md {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
     @include sm {
       margin-left: 10px;
       margin-right: 10px;
@@ -39,9 +43,8 @@
         line-height: 21.6px;
         margin-bottom: 12px;
         color: black;
- 
 
-        @include xl{
+        @include xl {
           text-align: center;
         }
       }

@@ -16,6 +16,7 @@
       padding-right: 60px;
       padding-bottom: 60px;
       padding-left: 50px;
+      background-attachment: unset;
     }
 
     @include sm {
@@ -29,10 +30,9 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgb(0, 0, 0, 0.1);
+      // background-color: rgb(0, 0, 0, 0.1);
+      background-image: linear-gradient(180deg, #0084d665 -50%, #00000074 100%);
     }
-
-    filter: brightness(110%);
 
     .special-items {
       display: flex;
@@ -93,7 +93,6 @@
         @include xl {
           font-size: 18px;
           line-height: 22px;
-           
         }
         @include md {
           font-size: 18px;
@@ -121,12 +120,14 @@
         text-transform: uppercase;
         width: 30%;
 
-        @include sm {
-          width: 100%;
-        }
-
         @include xl {
           width: 40%;
+        }
+        @include md {
+          width: 30%;
+        }
+        @include sm {
+          width: 100%;
         }
 
         &:hover {

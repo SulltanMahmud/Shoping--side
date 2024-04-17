@@ -30,7 +30,7 @@
     <!-- nav section -->
     <div class="nav-section">
       <div class="nav-wrapper">
-        <nav class="navbar navbar-expand-lg" >
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <div
               class="nav-left-part d-flex justify-content-center align-items-center"
@@ -58,8 +58,6 @@
                 </ul>
               </div>
             </div>
-
-           
 
             <!-- offcanvas -->
             <div
@@ -138,74 +136,71 @@
             </div>
 
             <div class="navbar-right-and-toggler d-flex gap-2">
-                
+              <div class="nav-right-section">
+                <ul class="navbar-nav">
+                  <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link res-colour pd" href="#">$0.00</a>
+                  </li>
+                  <li class="nav-item d-block">
+                    <button
+                      class="nav-link"
+                      aria-disabled="true"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasCart"
+                      aria-controls="offcanvasCart"
+                    >
+                      <!-- offcanvas cart -->
 
-            <div class="nav-right-section  ">
-              <ul class="navbar-nav ">
-                <li class="nav-item d-none d-lg-block ">
-                  <a class="nav-link" aria-current="page" href="#">About</a>
-                </li>
-                <li class="nav-item d-none d-lg-block">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item  ">
-                  <a class="nav-link  res-colour pd " href="#">$0.00</a>
-                </li>
-                <li class="nav-item d-block">
-                  <button
-                    class="nav-link"
-                    aria-disabled="true"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasCart"
-                    aria-controls="offcanvasCart"
+                      <!--  -->
+                      <div class="cart-img res-colour">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div class="zero-box-item text-center">0</div>
+                      </div>
+                    </button>
+                  </li>
+                  <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" aria-disabled="true">
+                      <i class="fa-regular fa-address-book"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon">
+                  <svg
+                    class="ast-mobile-svg ast-menu-svg"
+                    fill="currentColor"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
                   >
-                    <!-- offcanvas cart -->
-
-                    <!--  -->
-                    <div class="cart-img res-colour">
-                      <i class="fa-solid fa-bag-shopping"></i>
-                      <div class="zero-box-item text-center">0</div>
-                    </div>
-                  </button>
-                </li>
-                <li class="nav-item d-none d-lg-block">
-                  <a class="nav-link" aria-disabled="true">
-                    <i class="fa-regular fa-address-book"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-             <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon">
-                <svg
-                  class="ast-mobile-svg ast-menu-svg"
-                  fill="currentColor"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"
-                  ></path>
-                </svg>
-              </span>
-            </button>
+                    <path
+                      d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
             </div>
 
             <!-- Nav right section -->
-             
           </div>
         </nav>
         <div
@@ -213,7 +208,6 @@
           tabindex="-1"
           id="offcanvasCart"
           aria-labelledby="offcanvasCartLabel"
-          style="width: 80%"
         >
           <div class="offcanvas-header border">
             <h5 class="offcanvas-title" id="offcanvasCartLabel">
@@ -270,9 +264,7 @@
       <div class="main-home-section h-100">
         <div class="overlay"></div>
         <div class="custom-container">
-          <div
-            class="row justify-content-lg-start align-items-center justify-content-sm-center"
-          >
+          <div class="row">
             <div class="col-sm-12 col-md-9 col-lg-7 height">
               <div class="home-section">
                 <div class="home-content-title">
@@ -298,6 +290,7 @@
             </div>
           </div>
         </div>
+         
       </div>
     </section>
 
@@ -481,7 +474,7 @@
                       onclick="changeImage('orange')"
                     ></button>
                   </div>
-                  <div class="ratings ">
+                  <div class="ratings">
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
@@ -491,7 +484,6 @@
                 </div>
               </div>
             </div>
-          
 
             <div class="col-lg col-6 col-md-4">
               <div class="product-box">
@@ -761,7 +753,7 @@
       <div class="custom-feature-container">
         <div class="special-edition">
           <div class="col-12 col-lg-7">
-            <div class="overlay"></div>
+            <!-- <div class="overlay"></div> -->
             <div class="special-items">
               <div class="offer">Limited Time offer</div>
               <h2>Special Edition</h2>

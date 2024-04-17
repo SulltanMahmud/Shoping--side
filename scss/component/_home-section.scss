@@ -9,7 +9,11 @@
   position: relative;
 
   @include sm {
-    height: auto;
+    height: 476px;
+  }
+
+  @include md {
+    height: 579px !important;
   }
 
   .overlay {
@@ -18,11 +22,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    //background-color: rgb(0, 0, 0, 0.3);
-
 
     background-image: linear-gradient(180deg, #0084d682 -50%, #00000074 100%);
-    
+
     @include sm {
       height: auto;
     }
@@ -42,18 +44,26 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-     
+
     position: relative;
     z-index: 2;
     height: 100vh;
 
-    @include sm {
-      z-index: 0;
+    // @include sm {
+    //   z-index: 0;
+    //   height: 406px;
+    // }
+
+    @include xl{
+      padding-left: 30px !important;
+      height: 565px;
     }
 
     @include md {
-      z-index: 0;
-      padding: 120px 0;
+      z-index: 2;
+      // padding: 120px 0;
+
+      height: 579px;
     }
 
     @include sm {
@@ -63,6 +73,7 @@
       align-items: center;
       padding-top: 140px;
       padding-bottom: 75px;
+      height: 460px;
     }
 
     .home-content-title {

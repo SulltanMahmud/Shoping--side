@@ -120,7 +120,7 @@
                 font-weight: 700;
               }
 
-              @include sm{
+              @include sm {
                 font-weight: 700;
               }
 
@@ -168,6 +168,7 @@
 #offcanvasCart {
   .offcanvas-header {
     h5 {
+      font-family: "Lato", sans-serif;
       font-size: 16px;
       line-height: 16px;
       font-weight: 500;
@@ -184,15 +185,17 @@
     align-items: center;
     justify-content: center;
     p {
+      font-family: "Lato", sans-serif;
       font-size: 16px;
       font-weight: 400;
       color: rgb(51, 51, 51);
     }
 
     button {
+      font-family: "Lato", sans-serif;
       position: absolute;
       bottom: 20px;
-      width: 100%;
+      width: 90%;
       border: none;
       border-radius: 0px;
 
