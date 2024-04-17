@@ -34,7 +34,6 @@
     height: 100%;
   }
 
-  // display: flex;
   // flex-direction: column;
   // align-items: center;
   // justify-content: start;
@@ -54,7 +53,7 @@
     //   height: 406px;
     // }
 
-    @include xl{
+    @include xl {
       padding-left: 30px !important;
       height: 565px;
     }

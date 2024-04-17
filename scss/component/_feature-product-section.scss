@@ -36,6 +36,11 @@
   }
 
   .main-feature-box {
+    &.box-2{
+       @include md{
+        padding-top: 20px;
+       }
+    }
     padding-top: 50px;
 
     @include sm{

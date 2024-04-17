@@ -670,6 +670,11 @@ body {
 .feature-product-section .main-feature-box {
   padding-top: 50px;
 }
+@media only screen and (max-width: 768px) {
+  .feature-product-section .main-feature-box.box-2 {
+    padding-top: 20px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .feature-product-section .main-feature-box {
     padding-top: 30px;
@@ -767,9 +772,15 @@ body {
   padding-top: 75px;
   padding-bottom: 100px;
 }
+@media only screen and (max-width: 1024px) {
+  .footer-section {
+    padding-bottom: 0px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .footer-section {
     padding-top: 50px;
+    padding-bottom: 0px !important;
   }
 }
 .footer-section .dhk-logo {
@@ -777,8 +788,15 @@ body {
 }
 @media only screen and (max-width: 576px) {
   .footer-section .dhk-logo {
-    margin-left: 38%;
-    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .footer-section .dhk-logo img {
@@ -837,6 +855,23 @@ body {
 .footer-section .male-section ul li a:hover {
   color: blue;
 }
+@media only screen and (max-width: 576px) {
+  .footer-section .subscribe-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .footer-section .subscribe-section .title {
   font-size: 22px;
   font-weight: 400;
@@ -858,14 +893,20 @@ body {
   padding: 12px;
 }
 .footer-section .subscribe-section .btn {
+  font-family: "Lato", sans-serif;
   margin-top: 10px;
   border-radius: 0px;
   text-transform: uppercase;
-  padding: 10px 20px;
+  border: none;
+  padding: 16px 28px;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
 }
 @media only screen and (max-width: 576px) {
   .footer-section .subscribe-section .btn {
-    margin-left: 35%;
+    width: 35%;
+    margin-bottom: 20px;
   }
 }
 .footer-section .footer-last-part {
@@ -886,16 +927,26 @@ body {
     gap: 10px;
   }
 }
-.footer-section .footer-last-part .footer-left a {
+.footer-section .footer-last-part .footer-left {
   font-size: 15px;
   font-weight: 400;
   line-height: 27.85px;
   color: rgb(51, 51, 51);
   text-decoration: none;
 }
+@media only screen and (max-width: 576px) {
+  .footer-section .footer-last-part .footer-left {
+    font-size: 13px;
+  }
+}
 .footer-section .footer-last-part .footer-right i {
   cursor: pointer;
   margin-left: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .footer-section .footer-last-part .footer-right i {
+    margin-left: 30px;
+  }
 }
 .footer-section .footer-last-part .footer-right i:hover {
   color: blue;
@@ -1195,7 +1246,7 @@ body {
 }
 
 .offcanvas .btn-close {
-  --bs-btn-close-focus-shadow:none;
+  --bs-btn-close-focus-shadow: none;
   --bs-btn-close-opacity: 1;
 }
 .offcanvas .offcanvas-body {
@@ -1212,12 +1263,25 @@ body {
   background-color: rgb(238, 242, 243);
   padding: 15px 25px;
 }
+@media only screen and (max-width: 576px) {
+  .offcanvas .offcanvas-body ul li .context .account-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
 .offcanvas .offcanvas-body ul li .context.contact {
   background-color: white;
 }
+.offcanvas .offcanvas-body ul li .context.font {
+  font-weight: 100 !important;
+}
 .offcanvas .offcanvas-body ul li .context a {
+  font-family: "Lato", sans-serif;
   text-decoration: none;
   color: black;
+  font-size: 14px;
+  line-height: 39px;
+  font-weight: 700;
 }
 .offcanvas .offcanvas-body ul li .context a i {
   font-size: 20px;
