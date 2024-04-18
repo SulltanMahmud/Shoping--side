@@ -9,15 +9,14 @@ function changeImage(color) {
   }
 }
 
-// Nekles 
+// Nekles
 function changeImagetwo(color) {
   var img = document.getElementById("nekles");
   if (color === "pink") {
     img.src = "./assets/golden-nekles.jpg ";
   } else if (color === "sky") {
     img.src = "./assets/red-nekles.jpg";
-  } else if (color === "black") {
+  } else if (color === "$black-color") {
     img.src = " ./assets/asset 14.jpeg";
   }
 }
-

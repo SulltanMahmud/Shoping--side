@@ -65,7 +65,6 @@
               tabindex="-1"
               id="offcanvasRight"
               aria-labelledby="offcanvasRightLabel"
-               
             >
               <div class="offcanvas-header">
                 <button
@@ -185,10 +184,26 @@
                       </div>
                     </button>
                   </li>
-                  <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link" aria-disabled="true">
-                      <i class="fa-regular fa-address-book"></i>
-                    </a>
+                  <li class="nav-item d-none d-lg-block c-svg">
+                    <span class="ahfb-svg-iconset ast-inline-flex svg-baseline"
+                      ><svg
+                        version="1.1"
+                        class="account-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 120 120"
+                        enable-background="new 0 0 120 120"
+                        xml:space="preserve"
+                        widht="18px"
+                        height="18px"
+                      >
+                        <path
+                          d="M84.6,62c-14.1,12.3-35.1,12.3-49.2,0C16.1,71.4,3.8,91,3.8,112.5c0,2.1,1.7,3.8,3.8,3.8h105c2.1,0,3.8-1.7,3.8-3.8 C116.2,91,103.9,71.4,84.6,62z"
+                        ></path>
+                        <circle cx="60" cy="33.8" r="30"></circle></svg
+                    ></span>
                   </li>
                 </ul>
               </div>
@@ -292,11 +307,55 @@
         <!-- Brand splide section -->
         <div class="brand-logo">
           <section
-            class="splide"
+            class="splide splide--loop splide--ltr splide--draggable is-active is-overflow is-initialized"
             aria-label="Basic Structure Example"
             id="brand-logo"
+            aria-roledescription="carousel"
           >
-            <div class="splide__track">
+            <div class="splide__arrows splide__arrows--ltr">
+              <button
+                class="splide__arrow splide__arrow--prev"
+                type="button"
+                aria-label="Go to last slide"
+                aria-controls="brand-logo-track"
+                style="opacity: 0.1;"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                  width="40"
+                  height="40"
+                  focusable="false"
+                >
+                  <path
+                    d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                  ></path>
+                </svg></button
+              ><button
+                class="splide__arrow splide__arrow--next"
+                type="button"
+                aria-label="Next slide"
+                aria-controls="brand-logo-track"
+                style="opacity: 0.1; margin-right:10px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                  width="40"
+                  height="40"
+                  focusable="false"
+                >
+                  <path
+                    d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable"
+            id="brand-logo-track"
+            aria-live="off" 
+            aria-atomic="true"
+            >
               <ul class="splide__list">
                 <li class="splide__slide">
                   <div class="d-flex justify-content-center">
@@ -615,7 +674,7 @@
                     <div class="colour-option">
                       <button
                         class="blue"
-                        onclick="changeImagetwo('black')"
+                        onclick="changeImagetwo('$black-color')"
                       ></button>
                       <button
                         class="green"

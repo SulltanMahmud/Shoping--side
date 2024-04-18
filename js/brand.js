@@ -8,6 +8,7 @@ const brandlogo = new Splide("#brand-logo", {
   perMove:1,
   autoplay: true,
   interval: 5000,
+  arrows:true,
   breakpoints: {
     576: {
       perPage: 1,
@@ -24,3 +25,5 @@ const brandlogo = new Splide("#brand-logo", {
 });
 
 brandlogo.mount();
+
+ 

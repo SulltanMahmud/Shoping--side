@@ -26,12 +26,12 @@
     margin-bottom: 0px;
 
     &:hover{
-      color: rgb(43, 43, 255);
+      color:$hover-color;
     }
 
     @include md{
      font-size: 20px;
-     line-height: 30px; 
+     line-height: 26px; 
     }
     @include sm {
       font-size: 20px;

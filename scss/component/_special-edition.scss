@@ -10,7 +10,7 @@
     background-size: cover;
     object-fit: cover;
     padding: 100px;
-    color: white;
+    color: $white-color;
     @include md {
       padding-top: 60px;
       padding-right: 60px;
@@ -104,39 +104,36 @@
           text-align: center;
         }
       }
-
-       
     }
 
     .btn {
-        border: none;
-        border-radius: 0px;
-        color: black;
-        background-color: white;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 700;
-        text-size-adjust: 100%;
-        letter-spacing: 1px;
-        line-height: 14px;
-        padding: 16px 28px;
-        text-transform: uppercase;
-       
+      border: none;
+      border-radius: 0px;
+      color: $black-color;
+      background-color: $white-color;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      text-size-adjust: 100%;
+      letter-spacing: 1px;
+      line-height: 14px;
+      padding: 16px 28px;
+      text-transform: uppercase;
 
-        // @include xl {
-        //   width: 40%;
-        // }
-        // @include md {
-        //   width: 30%;
-        // }
-        @include sm {
-          width: 100%;
-        }
-
-        &:hover {
-          background-color: black;
-          color: white;
-        }
+      // @include xl {
+      //   width: 40%;
+      // }
+      // @include md {
+      //   width: 30%;
+      // }
+      @include sm {
+        width: 100%;
       }
+
+      &:hover {
+        background-color: $black-color;
+        color: $white-color;
+      }
+    }
   }
 }

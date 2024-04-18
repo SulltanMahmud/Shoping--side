@@ -6,10 +6,10 @@
       --bs-offcanvas-width: 700px;
     }
 
-    @include sm{
+    @include sm {
       --bs-offcanvas-width: 360px;
     }
-    @include xsm{
+    @include xsm {
       --bs-offcanvas-width: 300px;
     }
   }
@@ -33,7 +33,7 @@
             }
           }
           &.contact {
-            background-color: white;
+            background-color: $white-color;
           }
 
           &.font {
@@ -44,7 +44,7 @@
           a {
             font-family: "Lato", sans-serif;
             text-decoration: none;
-            color: black;
+            color: $black-color;
             font-size: 14px;
             line-height: 39px;
             font-weight: 700;
