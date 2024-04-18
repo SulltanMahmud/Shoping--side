@@ -137,6 +137,11 @@ body {
   background-image: unset;
   color: white;
 }
+@media only screen and (max-width: 992px) {
+  .nav-section .nav-wrapper .navbar .nav-right-section .res-colour {
+    color: black;
+  }
+}
 @media only screen and (max-width: 768px) {
   .nav-section .nav-wrapper .navbar .nav-right-section .res-colour {
     color: black !important;

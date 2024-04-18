@@ -51,6 +51,9 @@
 
       .nav-right-section {
         .res-colour {
+          @include lg{
+            color: $black-color;
+          }
           @include md {
             color: $black-color !important  ;
           }
@@ -58,10 +61,15 @@
 
         .pd {
           padding-right: 0px !important;
+          @include lg{
+             
+          }
         }
         .navbar-nav {
           @include lg {
             flex-direction: row;
+            
+
           }
           @include md {
             flex-direction: row;
