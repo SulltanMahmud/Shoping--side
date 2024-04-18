@@ -1,7 +1,22 @@
 .offcanvas {
+  // width: 700px;
+
+  &.offcanvas-end {
+    @include md {
+      --bs-offcanvas-width: 700px;
+    }
+
+    @include sm{
+      --bs-offcanvas-width: 360px;
+    }
+    @include xsm{
+      --bs-offcanvas-width: 300px;
+    }
+  }
   .btn-close {
     --bs-btn-close-focus-shadow: none;
-    --bs-btn-close-opacity: 1;
+
+    opacity: 1;
   }
   .offcanvas-body {
     padding-left: 0px;
@@ -11,11 +26,11 @@
       li {
         list-style: none;
         .context {
-          .account-icon{
-             @include sm{
+          .account-icon {
+            @include sm {
               width: 18px;
               height: 18px;
-             }
+            }
           }
           &.contact {
             background-color: white;

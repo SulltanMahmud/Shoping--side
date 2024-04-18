@@ -55,6 +55,12 @@ padding-bottom: 20px;
       display: flex;
       flex-direction: column;
       justify-content: end;
+      @include xl{
+        padding-top: 120px;
+        padding-left:20px ;
+        padding-right: 20px;
+        padding-bottom: 20px;
+      }
 
       @include md{
         padding: 20px;
